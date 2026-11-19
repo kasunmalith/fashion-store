@@ -1,0 +1,10 @@
+Options -Indexes -MultiViews
+RewriteEngine On
+RewriteRule ^$ public/index.php [L,QSA]
+RewriteRule ^admin/?$ public/admin/index.php [L,QSA]
+RewriteRule ^(index\.php|api\.php|invoice\.php|proof\.php|assets/.*|uploads/.*)$ public/$1 [L,QSA]
+RewriteRule ^(app|config|database|storage|resources|vendor|tests|bin)(/|$) - [F,L]
+RewriteRule ^(shop|category/[a-z0-9-]+|brand/[a-z0-9-]+|product/[a-z0-9-]+|policy/[a-z0-9-]+|order/[1-9][0-9]*|cart|checkout|login|register|account|track|wishlist|contact|forgot|reset)/?$ public/index.php [L,QSA,NC]
+<FilesMatch "(?i)(\.(sql|md|json|lock|log|txt)|^\.)$">
+Require all denied
+</FilesMatch>

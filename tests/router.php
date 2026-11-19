@@ -1,0 +1,4 @@
+<?php
+// Development test server: php -S 127.0.0.1:8098 tests/router.php
+$path=parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);$relative=preg_replace('~^/shop/?~','/',$path);$public=dirname(__DIR__).'/public';if(preg_match('~^/(assets|uploads)/[a-zA-Z0-9_./-]+$~D',$relative)&&!str_contains($relative,'..')){$file=$public.$relative;if(is_file($file)){$ext=pathinfo($file,PATHINFO_EXTENSION);$mime=['css'=>'text/css','js'=>'application/javascript','svg'=>'image/svg+xml','webp'=>'image/webp','png'=>'image/png','jpg'=>'image/jpeg'][$ext]??'application/octet-stream';header('Content-Type: '.$mime);readfile($file);return;}}
+$routes=['/'=>'index.php','/index.php'=>'index.php','/api.php'=>'api.php','/invoice.php'=>'invoice.php','/proof.php'=>'proof.php','/admin/'=>'admin/index.php','/admin'=>'admin/index.php'];if(!isset($routes[$relative])){http_response_code(404);exit;}require $public.'/'.$routes[$relative];
