@@ -1,3 +1,5 @@
+![Mira Edit project cover](docs/readme-banner.svg)
+
 <div align="center">
   <h1>Mira Edit Fashion Store</h1>
   <p><strong>A fashion storefront with an operations-focused admin console.</strong></p>

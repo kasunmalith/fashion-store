@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Mira Edit project cover">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101c2c"/><stop offset="1" stop-color="#243447"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#8e71b1" stop-opacity=".35"/><stop offset="1" stop-color="#8e71b1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+<circle cx="930" cy="150" r="235" fill="url(#glow)"/>
+<path d="M0 0h12v300H0z" fill="#8e71b1"/>
+<path d="M50 55h260" stroke="#8e71b1" stroke-width="3"/>
+<text x="54" y="99" fill="#dbc6f6" font-size="17" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="4">FASHION · COMMERCE</text>
+<text x="50" y="180" fill="#ffffff" font-size="54" font-family="Arial, Helvetica, sans-serif" font-weight="700">Mira Edit</text>
+<text x="54" y="229" fill="#b7c6d4" font-size="20" font-family="Arial, Helvetica, sans-serif">PUBLIC SOURCE · ENERGETIC EDGE</text>
+<g fill="none" stroke="#dbc6f6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".9"><path d="M838 88c0-17 12-29 30-29s30 12 30 29c0 15-12 23-27 29v22m0 0-137 89h274l-137-89"/><path d="M773 196h196"/></g>
+</svg>
